@@ -37,7 +37,11 @@ function App() {
             </svg>
             <span className="logo-text">tokenz</span>
           </div>
-          <a href="#waitlist" className="nav-cta">Get Early Access</a>
+          <div className="nav-platforms">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M11.3 1.6C10.5.7 9.4.2 8.2.2c-2 0-3.6 1.3-4.2 3.1C1.7 4 0 6.1 0 8.6c0 2.9 2.1 5.2 4.8 5.2.5 0 1-.1 1.5-.3.5.3 1.1.5 1.7.5.6 0 1.2-.2 1.7-.5.5.2 1 .3 1.5.3 2.7 0 4.8-2.3 4.8-5.2 0-2.5-1.7-4.6-4-5.3-.5-1.1-1.5-1.7-2.7-1.7z" fill="var(--text-dim)" fillOpacity="0.5"/></svg>
+            <svg width="13" height="14" viewBox="0 0 14 16" fill="none"><path d="M1 1.5l5.6 6.5L1 14.5M1 14.5h12L7.4 8.5 1 1.5h12" stroke="var(--text-dim)" strokeOpacity="0.5" strokeWidth="1.2" strokeLinejoin="round" fill="none"/></svg>
+            <span className="nav-platform-text">iOS + Android + Seeker</span>
+          </div>
         </div>
       </nav>
 
@@ -98,6 +102,14 @@ function App() {
               </div>
             )}
             <p className="waitlist-note">No spam. Early access + token launch priority.</p>
+            <div className="platform-hint">
+              <span className="platform-hint-label">Coming to</span>
+              <div className="platform-chips">
+                <span className="chip">App Store</span>
+                <span className="chip">Google Play</span>
+                <span className="chip">Solana Seeker</span>
+              </div>
+            </div>
           </div>
         </div>
 
