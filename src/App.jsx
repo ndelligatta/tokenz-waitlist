@@ -60,8 +60,9 @@ function App() {
 
           <div id="waitlist" className="waitlist-section">
             {!submitted ? (
-              <form className="waitlist-form" onSubmit={handleSubmit} name="waitlist" data-netlify="true">
+              <form className="waitlist-form" onSubmit={handleSubmit} name="waitlist" data-netlify="true" netlify-honeypot="bot-field">
                 <input type="hidden" name="form-name" value="waitlist" />
+                <input type="hidden" name="bot-field" />
                 <div className="form-row">
                   <input
                     type="email"
@@ -160,8 +161,42 @@ function App() {
           <div className="feature-divider" />
           <div className="feature">
             <div className="feature-num">03</div>
-            <h3>Social Meets DeFi</h3>
-            <p>Follow creators, build communities, trade tokens — a real social feed with decentralized finance built into every interaction.</p>
+            <h3>Claim Your Fees</h3>
+            <p>Earn a share of trading fees on every token you launch. As your community trades, you collect rewards — automatically, on-chain.</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="rewards">
+        <div className="rewards-inner">
+          <div className="rewards-content">
+            <div className="rewards-label">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M8 1l2.1 4.3 4.9.7-3.5 3.4.8 4.6L8 11.8 3.7 14l.8-4.6L1 6l4.9-.7L8 1z" stroke="var(--gold)" strokeWidth="1.2" strokeLinejoin="round" fill="var(--gold)" fillOpacity="0.15"/>
+              </svg>
+              Fee Rewards
+            </div>
+            <h2 className="rewards-headline">Launch a token.<br />Earn every time it trades.</h2>
+            <p className="rewards-desc">
+              Every token launched on Tokenz generates trading fees through the bonding curve.
+              As the creator, you claim a portion of those fees directly to your wallet — no middlemen, no delays.
+            </p>
+          </div>
+          <div className="rewards-stats">
+            <div className="stat">
+              <div className="stat-value">Real-time</div>
+              <div className="stat-label">Fee accrual</div>
+            </div>
+            <div className="stat-divider" />
+            <div className="stat">
+              <div className="stat-value">On-chain</div>
+              <div className="stat-label">Claim to wallet</div>
+            </div>
+            <div className="stat-divider" />
+            <div className="stat">
+              <div className="stat-value">Automatic</div>
+              <div className="stat-label">No manual setup</div>
+            </div>
           </div>
         </div>
       </section>

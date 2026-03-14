@@ -460,6 +460,134 @@
   color: var(--text-dim);
 }
 
+/* --- Rewards Section --- */
+.rewards {
+  position: relative;
+  z-index: 1;
+  border-top: 1px solid var(--border);
+  background: var(--bg);
+  overflow: hidden;
+}
+
+.rewards::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: 20%;
+  right: 20%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold-border), transparent);
+}
+
+.rewards-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 72px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.rewards-content {
+  max-width: 560px;
+}
+
+.rewards-label {
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 12px 5px 8px;
+  background: var(--gold-dim);
+  border: 1px solid var(--gold-border);
+  border-radius: 5px;
+  margin-bottom: 24px;
+}
+
+.rewards-headline {
+  font-family: var(--display);
+  font-size: clamp(28px, 3.5vw, 42px);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.035em;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.rewards-desc {
+  font-size: 15px;
+  line-height: 1.75;
+  color: var(--text-dim);
+  max-width: 480px;
+}
+
+.rewards-stats {
+  display: flex;
+  gap: 0;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.stat {
+  flex: 1;
+  padding: 28px 32px;
+  text-align: center;
+}
+
+.stat-value {
+  font-family: var(--display);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--gold);
+  letter-spacing: -0.02em;
+  margin-bottom: 6px;
+}
+
+.stat-label {
+  font-size: 13px;
+  color: var(--text-dim);
+}
+
+.stat-divider {
+  width: 1px;
+  background: var(--border);
+  align-self: stretch;
+}
+
+@media (max-width: 960px) {
+  .rewards-inner {
+    padding: 56px 32px;
+    gap: 36px;
+  }
+}
+
+@media (max-width: 540px) {
+  .rewards-inner {
+    padding: 40px 20px;
+    gap: 28px;
+  }
+
+  .rewards-stats {
+    flex-direction: column;
+  }
+
+  .stat {
+    padding: 20px;
+  }
+
+  .stat-divider {
+    width: auto;
+    height: 1px;
+  }
+}
+
 /* --- Footer --- */
 .footer {
   position: relative;
