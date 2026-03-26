@@ -220,7 +220,12 @@ function App() {
             <span className="footer-sep">/</span>
             <span className="footer-tagline">Social tokens, simplified.</span>
           </div>
-          <span className="footer-copy">&copy; 2026</span>
+          <div className="footer-right">
+            <a href="/support" className="footer-link">Support</a>
+            <a href="/termsofservice" className="footer-link">Terms</a>
+            <a href="/privacy" className="footer-link">Privacy</a>
+            <span className="footer-copy">&copy; 2026</span>
+          </div>
         </div>
       </footer>
     </div>

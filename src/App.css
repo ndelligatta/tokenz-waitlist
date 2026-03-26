@@ -659,6 +659,23 @@
   color: var(--text-dim);
 }
 
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-link {
+  font-size: 13px;
+  color: var(--text-dim);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-link:hover {
+  color: var(--text);
+}
+
 .footer-copy {
   font-family: var(--mono);
   font-size: 11px;

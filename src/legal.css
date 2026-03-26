@@ -1,0 +1,218 @@
+/* ── Legal pages (TOS, Privacy, Support) ── */
+
+.legal-page {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Nav ── */
+.legal-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  backdrop-filter: blur(20px) saturate(1.4);
+  -webkit-backdrop-filter: blur(20px) saturate(1.4);
+  background: rgba(6, 6, 10, 0.82);
+  border-bottom: 1px solid var(--border);
+}
+
+.legal-nav-inner {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 32px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.legal-nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.legal-nav-logo span {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: -0.03em;
+  color: var(--text);
+}
+
+.legal-nav-links {
+  display: flex;
+  gap: 24px;
+}
+
+.legal-nav-links a {
+  font-size: 13px;
+  color: var(--text-dim);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.legal-nav-links a:hover {
+  color: var(--text);
+}
+
+/* ── Content ── */
+.legal-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 120px 32px 80px;
+  flex: 1;
+}
+
+.legal-content h1 {
+  font-family: var(--display);
+  font-size: clamp(32px, 5vw, 48px);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.legal-updated {
+  font-size: 14px;
+  color: var(--text-dim);
+  margin-bottom: 48px;
+}
+
+.legal-content h2 {
+  font-family: var(--display);
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #fff;
+  margin: 40px 0 12px;
+}
+
+.legal-content h3 {
+  font-family: var(--display);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text);
+  margin: 24px 0 8px;
+}
+
+.legal-content p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--text-dim);
+  margin-bottom: 12px;
+}
+
+.legal-content ul,
+.legal-content ol {
+  padding-left: 24px;
+  margin-bottom: 16px;
+}
+
+.legal-content li {
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--text-dim);
+  margin-bottom: 6px;
+}
+
+.legal-content li strong {
+  color: var(--text-mid);
+}
+
+.legal-content a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.legal-content a:hover {
+  text-decoration: underline;
+}
+
+/* ── Contact card (support page) ── */
+.contact-card {
+  margin-top: 40px;
+  padding: 28px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.contact-card h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+.contact-card p {
+  margin-bottom: 4px;
+}
+
+/* ── Footer ── */
+.legal-footer {
+  position: relative;
+  z-index: 1;
+  border-top: 1px solid var(--border);
+}
+
+.legal-footer-inner {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+  color: var(--text-dim);
+}
+
+.legal-footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+.legal-footer-links a {
+  color: var(--text-dim);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.legal-footer-links a:hover {
+  color: var(--text);
+}
+
+/* ── Responsive ── */
+@media (max-width: 540px) {
+  .legal-nav-inner {
+    padding: 0 20px;
+    height: 56px;
+  }
+
+  .legal-nav-links {
+    gap: 16px;
+  }
+
+  .legal-nav-links a {
+    font-size: 12px;
+  }
+
+  .legal-content {
+    padding: 100px 20px 60px;
+  }
+
+  .legal-footer-inner {
+    padding: 20px;
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+}
